@@ -1,0 +1,138 @@
+==================
+= Docker Commnad =
+==================
+
+# docker images 
+=> list of docker images list
+
+# docker stop <imgesID> 
+=> Stop images
+
+# docker ps --all 
+=> To show container's list
+
+# docker rm <container_name>
+=> To delete container
+
+# docker stop `docker ps -q`
+=> To stop created container's
+
+# docker rmi <image id>
+=> To stop docker image (python:2.7, etc.)
+
+# docker rmi -f <image id>
+=> To forcefully remove docker images
+
+# docker build -t <image_name>
+=> To build docker file
+
+# docker run <image_name>
+=> To run the image
+
+# docker run --name <file_name> -p 8182:4000 <file_name>
+=> To run localhost port
+
+=======================================================================================================================================
+
+
+==========
+= GitHub =
+==========
+
+
+Make folder
+Go to working directory
+
+# git config --global user.name "pranayshahare26"
+# git config --global user.email "pranayshahare31@gmail.com"
+=> For env to check git remote access
+
+# ssh-keygen -t rsa -b 4096 -C "git ssh keys"
+=> To generate key
+
+# cat /root/.ssh/id_rse.pub
+=> Select all key and paste in repo setting go to SSH and paste here
+
+# git init
+=> For initialize repo
+
+# git add *
+=> To add all file to staging area
+
+# git commit -m "File"
+=> To create node for pushing
+
+# git remode add origin <repo_ssh_id>
+=> To remote access/add
+
+# git branch -M master
+
+# git push -u origin master
+=> Pushing data to repo
+
+
+==========================================================================================================================================
+
+=======
+= AWS =
+=======
+
+Create a S3 bucket
+
+=> Go search bar and type IAM role
+=> The create role and select EC2 and click next
+=> Then select 3 role
+	1) AmazonS3 full access
+	2) Cloudwatch full access
+	3) Amazon Lamdda Execute
+
+=> Go search S3 bucket and click create bucket then give unique bucket name
+=> Now search for Lambda and click Create function and give name
+=> Select runtime python lang
+=> Click change default execution role and select Use an existing role
+=> Selct user create IAM role and click create
+=? Then scroll down and changes in code snippet and deploy
+=> Successfully deploy then click on test to check for code are execute
+=> Click add trigger and search S3 and click
+=? Then click user created bucket click that bucket
+=> Event types select PUT or whatever you choose but running time PUT are not selected
+=> So scroll and check details mark event type and click edit and select whatever user want
+=> Go S3 bucket and upload some files and check in lambda fuction
+=> Scroll click logs
+
+
+Create a EC2
+
+=> 
+======================================================================================================================================
+
+=========
+= Cisco =
+=========
+
+Router(config)#router eigrp 1
+Router(config-router)#network 192.168.10.0
+Router(config-router)#network 192.168.20.0
+Router(config-router)#network 192.168.30.0
+Router(config-router)#network 192.168.40.0
+
+
+Ospf
+
+Router(config-if)#router ospf 1
+Router(config-router)#network   10.0.0.0    0.255.255.255   area 0
+Router(config-router)#network   20.0.0.0    0.255.255.255   area 0
+Router1
+Router(config-if)#router ospf 2
+Router(config-router)#network   20.0.0.0    0.255.255.255   area 0
+Router(config-router)#network   30.0.0.0    0.255.255.255   area 0
+
+
+conf t
+do wr-----> to save ip routes
+do sh ip------> route show routes
+en --->enable routers
+
+
+
+

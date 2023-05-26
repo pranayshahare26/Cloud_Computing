@@ -1,0 +1,31 @@
+ipconfig 192.168.0.1 255.255.255.0
+
+ip route <network id> <subnet mask><next hop>
+
+network 192.168.1.0
+
+
+enable
+configure terminal
+router rip
+show ip route
+show ip route summary
+
+
+show interface summary 
+
+
+
+     10.0.0.0/24 is subnetted, 1 subnets
+O       10.0.0.0 [110/2] via 20.0.0.1, 00:03:32, FastEthernet5/0
+     20.0.0.0/24 is subnetted, 1 subnets
+C       20.0.0.0 is directly connected, FastEthernet5/0
+     30.0.0.0/24 is subnetted, 1 subnets
+O       30.0.0.0 [110/2] via 40.0.0.2, 00:06:48, FastEthernet4/0
+     40.0.0.0/24 is subnetted, 1 subnets
+C       40.0.0.0 is directly connected, FastEthernet4/0
+O    192.168.1.0/24 [110/2] via 20.0.0.1, 00:03:32, FastEthernet5/0
+O    192.168.2.0/24 [110/3] via 40.0.0.2, 00:03:32, FastEthernet4/0
+                    [110/3] via 20.0.0.1, 00:03:32, FastEthernet5/0
+C    192.168.3.0/24 is directly connected, FastEthernet0/0
+

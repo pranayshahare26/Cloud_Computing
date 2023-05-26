@@ -1,0 +1,67 @@
+==================
+= Docker Commnad =
+==================
+
+# docker images 
+=> list of docker images list
+
+# docker stop <imgesID> 
+=> Stop images
+
+# docker ps --all 
+=> To show container's list
+
+# docker rm <container_name>
+=> To delete container
+
+# docker stop `docker ps -q`
+=> To stop created container's
+
+# docker rmi <image id>
+=> To stop docker image (python:2.7, etc.)
+
+# docker rmi -f <image id>
+=> To forcefully remove docker images
+
+# docker build -t <image_name>
+=> To build docker file
+
+# docker run <image_name>
+=> To run the image
+
+# docker run --name <file_name> -p 8182:4000 <file_name>
+=> To run localhost port
+
+==========
+= GitHub =
+==========
+
+Make folder
+Go to working directory
+
+# git config --global user.name "pranayshahare26"
+# git config --global user.email "pranayshahare31@gmail.com"
+=> For env to check git remote access
+
+# ssh-keygen -t rsa -b 4096 -C "git ssh keys"
+=> To generate key
+
+# cat /root/.ssh/id_rse.pub
+=> Select all key and paste in repo setting go to SSH and paste here
+
+# git init
+=> For initialize repo
+
+# git add *
+=> To add all file to staging area
+
+# git commit -m "File"
+=> To create node for pushing
+
+# git remode add origin <repo_ssh_id>
+=> To remote access/add
+
+# git branch -M master
+
+# git push -u origin master
+=> Pushing data to repo
