@@ -77,7 +77,7 @@ Go to working directory
 = AWS =
 =======
 
-Create a S3 bucket
+Create a S3 bucket (Simple Storage Service)
 
 => Go search bar and type IAM role
 => The create role and select EC2 and click next
@@ -101,7 +101,7 @@ Create a S3 bucket
 => Scroll click logs
 
 
-Create a EC2
+Create a EC2 (Elastic Compute)
 
 => 
 ======================================================================================================================================
